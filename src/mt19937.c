@@ -31,8 +31,8 @@ void mt19937_init(struct mt19937 *mt, uint32_t seed) {
 static void mt19937_twister(struct mt19937 *mt) {
   for (uint32_t i = 0; i < mt19937_n; ++i) {
     uint32_t z = (mt->x_[i] & kUpperBits) | (mt->x_[(i + 1) % mt19937_n] & kLowerBits);
-    mt->x_[i] = mt->x_[(i + m) % mt19937_n] ^ (z >> 1);
-    mt->x_[i] ^= (z & 0x01) ? a : 0;
+    mt->x_[i] = mt->x_[(i + m) % mt19937_n] ^ (z >> 1U);
+    mt->x_[i] ^= (z & 0x01U) ? a : 0;
   }
   mt->p_ = 0;
 }

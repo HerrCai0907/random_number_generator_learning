@@ -1,3 +1,6 @@
+#ifndef MT19937_HPP
+#define MT19937_HPP
+
 #include <array>
 #include <cstdint>
 
@@ -36,3 +39,5 @@ private:
 };
 
 } // namespace rng
+
+#endif

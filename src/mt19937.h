@@ -1,3 +1,6 @@
+#ifndef MT19937_H
+#define MT19937_H
+
 #include <stddef.h>
 #include <stdint.h>
 
@@ -10,3 +13,5 @@ struct mt19937 {
 
 void mt19937_init(struct mt19937 *mt, uint32_t seed);
 uint32_t mt19937_generate_random_number(struct mt19937 *mt);
+
+#endif
