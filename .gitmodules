@@ -1,0 +1,3 @@
+[submodule "third_party/testu01"]
+	path = third_party/testu01
+	url = https://github.com/umontreal-simul/TestU01-2009.git

@@ -17,7 +17,7 @@ int main() {
     auto v1 = engine1();
     auto v2 = sfc32_generate_random_number(&engine2);
     // std::cout << v0 << "-" << v1 << "-" << v2 << std::endl;
-    assert(v0 == v2 && "mt19937_c value is not same as std");
+    assert(v1 == v2 && "mt19937_c value is not same as std");
   }
   std::cout << "test successfully\n";
 }
