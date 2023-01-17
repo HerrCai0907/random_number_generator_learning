@@ -1,5 +1,12 @@
 # RNG learning
 
+## accuracy test
+
+```bash
+./tests/mt19937_test
+./tests/sfc32_test
+```
+
 ## Test Result Undetstanding
 
 ```bash
